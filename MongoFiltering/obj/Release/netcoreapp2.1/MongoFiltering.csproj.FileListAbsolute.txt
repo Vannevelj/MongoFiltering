@@ -8,4 +8,3 @@ C:\Users\jeroen.vannevel\source\repos\MongoFiltering\MongoFiltering\obj\Release\
 C:\Users\jeroen.vannevel\source\repos\MongoFiltering\MongoFiltering\obj\Release\netcoreapp2.1\MongoFiltering.AssemblyInfo.cs
 C:\Users\jeroen.vannevel\source\repos\MongoFiltering\MongoFiltering\obj\Release\netcoreapp2.1\MongoFiltering.dll
 C:\Users\jeroen.vannevel\source\repos\MongoFiltering\MongoFiltering\obj\Release\netcoreapp2.1\MongoFiltering.pdb
-C:\Users\jeroen.vannevel\source\repos\MongoFiltering\MongoFiltering\obj\Release\netcoreapp2.1\MongoFiltering.csprojAssemblyReference.cache
