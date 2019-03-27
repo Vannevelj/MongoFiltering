@@ -1,0 +1,276 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 54 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet restore  /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in C:\Users\jeroen.vannevel\source\repos\MongoFiltering\MongoFiltering\bin\Release\netcoreapp2.1\316c2cb8-448a-4c79-896e-655fa3752300
+// command took 1.85s and exited with 0
+// start dotnet build -c Release  --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in C:\Users\jeroen.vannevel\source\repos\MongoFiltering\MongoFiltering\bin\Release\netcoreapp2.1\316c2cb8-448a-4c79-896e-655fa3752300
+// command took 3.31s and exited with 0
+// ***** Done, took 00:00:05 (5.44 sec)   *****
+// Found 54 benchmarks:
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=1, NumberOfElements=1, PercentageOfDeletedElements=0]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=1, NumberOfElements=1, PercentageOfDeletedElements=0]
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=1, NumberOfElements=1, PercentageOfDeletedElements=0.5]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=1, NumberOfElements=1, PercentageOfDeletedElements=0.5]
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=1, NumberOfElements=1, PercentageOfDeletedElements=1]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=1, NumberOfElements=1, PercentageOfDeletedElements=1]
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=1, NumberOfElements=100, PercentageOfDeletedElements=0]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=1, NumberOfElements=100, PercentageOfDeletedElements=0]
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=1, NumberOfElements=100, PercentageOfDeletedElements=0.5]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=1, NumberOfElements=100, PercentageOfDeletedElements=0.5]
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=1, NumberOfElements=100, PercentageOfDeletedElements=1]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=1, NumberOfElements=100, PercentageOfDeletedElements=1]
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=1, NumberOfElements=10000, PercentageOfDeletedElements=0]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=1, NumberOfElements=10000, PercentageOfDeletedElements=0]
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=1, NumberOfElements=10000, PercentageOfDeletedElements=0.5]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=1, NumberOfElements=10000, PercentageOfDeletedElements=0.5]
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=1, NumberOfElements=10000, PercentageOfDeletedElements=1]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=1, NumberOfElements=10000, PercentageOfDeletedElements=1]
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=100, NumberOfElements=1, PercentageOfDeletedElements=0]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=100, NumberOfElements=1, PercentageOfDeletedElements=0]
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=100, NumberOfElements=1, PercentageOfDeletedElements=0.5]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=100, NumberOfElements=1, PercentageOfDeletedElements=0.5]
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=100, NumberOfElements=1, PercentageOfDeletedElements=1]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=100, NumberOfElements=1, PercentageOfDeletedElements=1]
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=100, NumberOfElements=100, PercentageOfDeletedElements=0]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=100, NumberOfElements=100, PercentageOfDeletedElements=0]
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=100, NumberOfElements=100, PercentageOfDeletedElements=0.5]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=100, NumberOfElements=100, PercentageOfDeletedElements=0.5]
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=100, NumberOfElements=100, PercentageOfDeletedElements=1]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=100, NumberOfElements=100, PercentageOfDeletedElements=1]
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=100, NumberOfElements=10000, PercentageOfDeletedElements=0]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=100, NumberOfElements=10000, PercentageOfDeletedElements=0]
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=100, NumberOfElements=10000, PercentageOfDeletedElements=0.5]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=100, NumberOfElements=10000, PercentageOfDeletedElements=0.5]
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=100, NumberOfElements=10000, PercentageOfDeletedElements=1]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=100, NumberOfElements=10000, PercentageOfDeletedElements=1]
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=10000, NumberOfElements=1, PercentageOfDeletedElements=0]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=10000, NumberOfElements=1, PercentageOfDeletedElements=0]
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=10000, NumberOfElements=1, PercentageOfDeletedElements=0.5]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=10000, NumberOfElements=1, PercentageOfDeletedElements=0.5]
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=10000, NumberOfElements=1, PercentageOfDeletedElements=1]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=10000, NumberOfElements=1, PercentageOfDeletedElements=1]
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=10000, NumberOfElements=100, PercentageOfDeletedElements=0]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=10000, NumberOfElements=100, PercentageOfDeletedElements=0]
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=10000, NumberOfElements=100, PercentageOfDeletedElements=0.5]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=10000, NumberOfElements=100, PercentageOfDeletedElements=0.5]
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=10000, NumberOfElements=100, PercentageOfDeletedElements=1]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=10000, NumberOfElements=100, PercentageOfDeletedElements=1]
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=10000, NumberOfElements=10000, PercentageOfDeletedElements=0]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=10000, NumberOfElements=10000, PercentageOfDeletedElements=0]
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=10000, NumberOfElements=10000, PercentageOfDeletedElements=0.5]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=10000, NumberOfElements=10000, PercentageOfDeletedElements=0.5]
+//   Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=10000, NumberOfElements=10000, PercentageOfDeletedElements=1]
+//   Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=10000, NumberOfElements=10000, PercentageOfDeletedElements=1]
+
+// **************************
+// Benchmark: Comparison.GetDbFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=1, NumberOfElements=1, PercentageOfDeletedElements=0]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "316c2cb8-448a-4c79-896e-655fa3752300.dll" --benchmarkName "MongoFiltering.Comparison.GetDbFilter(NumberOfOuters: 1, NumberOfElements: 1, PercentageOfDeletedElements: 0)" --job "InvocationCount=1, UnrollFactor=1" --benchmarkId 0 in C:\Users\jeroen.vannevel\source\repos\MongoFiltering\MongoFiltering\bin\Release\netcoreapp2.1\316c2cb8-448a-4c79-896e-655fa3752300\bin\Release\netcoreapp2.1
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.9 (CoreCLR 4.6.27414.06, CoreFX 4.6.27415.01), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-PHEEVV(InvocationCount=1, UnrollFactor=1)
+
+OverheadJitting  1: 1 op, 1750200.00 ns, 1.7502 ms/op
+Setting up iteration
+2019-03-27T00:13:41.227+0000 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+
+2019-03-27T00:13:41.309+0000 I CONTROL  [initandlisten] MongoDB starting : pid=5764 port=27030 dbpath=C:\Users\jeroen.vannevel\AppData\Local\Temp\h5yestao.oyq2a07d2eb3f894e92b28d_27030 64-bit host=jvannevel18l
+
+2019-03-27T00:13:41.309+0000 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+
+2019-03-27T00:13:41.309+0000 I CONTROL  [initandlisten] db version v4.0.2
+
+2019-03-27T00:13:41.309+0000 I CONTROL  [initandlisten] git version: fc1573ba18aee42f97a3bb13b67af7d837826b47
+
+2019-03-27T00:13:41.309+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+
+2019-03-27T00:13:41.309+0000 I CONTROL  [initandlisten] modules: none
+
+2019-03-27T00:13:41.309+0000 I CONTROL  [initandlisten] build environment:
+
+2019-03-27T00:13:41.309+0000 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+
+2019-03-27T00:13:41.309+0000 I CONTROL  [initandlisten]     distarch: x86_64
+
+2019-03-27T00:13:41.309+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+
+2019-03-27T00:13:41.309+0000 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", port: 27030, ssl: { mode: "disabled" } }, replication: { replSet: "singleNodeReplSet" }, storage: { dbPath: "C:\Users\jeroen.vannevel\AppData\Local\Temp\h5yestao.oyq2a07d2eb3f894e92b28d_27030" } }
+
+2019-03-27T00:13:41.314+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=15797M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+
+2019-03-27T00:13:41.372+0000 I STORAGE  [initandlisten] WiredTiger message [1553645621:372316][5764:140705389370080], txn-recover: Set global recovery timestamp: 0
+
+2019-03-27T00:13:41.390+0000 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+
+2019-03-27T00:13:41.444+0000 I CONTROL  [initandlisten] 
+
+2019-03-27T00:13:41.444+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+
+2019-03-27T00:13:41.444+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+
+2019-03-27T00:13:41.444+0000 I CONTROL  [initandlisten] 
+
+2019-03-27T00:13:41.450+0000 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: 98860dea-50bd-4dea-ae18-ed6873916f7c
+
+2019-03-27T00:13:42.066+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/Users/jeroen.vannevel/AppData/Local/Temp/h5yestao.oyq2a07d2eb3f894e92b28d_27030/diagnostic.data'
+
+2019-03-27T00:13:42.068+0000 I STORAGE  [initandlisten] createCollection: local.replset.oplogTruncateAfterPoint with generated UUID: 6629c1c6-9c48-469c-8418-f9a5f7dc925f
+
+2019-03-27T00:13:42.105+0000 I STORAGE  [initandlisten] createCollection: local.replset.minvalid with generated UUID: 11d45691-2997-4a62-adea-89bc43a311a2
+
+2019-03-27T00:13:42.140+0000 I REPL     [initandlisten] Did not find local voted for document at startup.
+
+2019-03-27T00:13:42.140+0000 I REPL     [initandlisten] Did not find local Rollback ID document at startup. Creating one.
+
+2019-03-27T00:13:42.140+0000 I STORAGE  [initandlisten] createCollection: local.system.rollback.id with generated UUID: ada6388a-d272-4930-960f-42caf98d0211
+
+2019-03-27T00:13:42.176+0000 I REPL     [initandlisten] Initialized the rollback ID to 1
+
+2019-03-27T00:13:42.176+0000 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument: Did not find replica set configuration document in local.system.replset
+
+2019-03-27T00:13:42.178+0000 I CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Replication has not yet been configured
+
+2019-03-27T00:13:42.178+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Replication has not yet been configured
+
+2019-03-27T00:13:42.179+0000 I NETWORK  [initandlisten] waiting for connections on port 27030
+
+2019-03-27T00:13:42.572+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:60644 #1 (1 connection now open)
+
+2019-03-27T00:13:42.655+0000 I NETWORK  [conn1] received client metadata from 127.0.0.1:60644 conn1: { driver: { name: "mongo-csharp-driver", version: "2.8.0.0" }, os: { type: "Windows", name: "Microsoft Windows 10.0.17763", architecture: "x86_64", version: "10.0.17763" }, platform: ".NET Core 4.6.27414.06" }
+
+2019-03-27T00:13:42.849+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:60645 #2 (2 connections now open)
+
+2019-03-27T00:13:42.853+0000 I NETWORK  [conn2] received client metadata from 127.0.0.1:60645 conn2: { driver: { name: "mongo-csharp-driver", version: "2.8.0.0" }, os: { type: "Windows", name: "Microsoft Windows 10.0.17763", architecture: "x86_64", version: "10.0.17763" }, platform: ".NET Core 4.6.27414.06" }
+
+2019-03-27T00:13:42.873+0000 I REPL     [conn2] replSetInitiate admin command received from client
+
+2019-03-27T00:13:42.874+0000 I REPL     [conn2] replSetInitiate config object with 1 members parses ok
+
+2019-03-27T00:13:42.874+0000 I REPL     [conn2] ******
+
+2019-03-27T00:13:42.874+0000 I REPL     [conn2] creating replication oplog of size: 16268MB...
+
+2019-03-27T00:13:42.874+0000 I STORAGE  [conn2] createCollection: local.oplog.rs with generated UUID: 7593d13f-c525-41d7-9de2-12c26f81ec7c
+
+2019-03-27T00:13:42.892+0000 I STORAGE  [conn2] Starting WiredTigerRecordStoreThread local.oplog.rs
+
+2019-03-27T00:13:42.893+0000 I STORAGE  [conn2] The size storer reports that the oplog contains 0 records totaling to 0 bytes
+
+2019-03-27T00:13:42.893+0000 I STORAGE  [conn2] Scanning the oplog to determine where to place markers for truncation
+
+2019-03-27T00:13:42.950+0000 I REPL     [conn2] ******
+
+2019-03-27T00:13:42.951+0000 I STORAGE  [conn2] createCollection: local.system.replset with generated UUID: d0aa4baa-aa13-4289-ac7b-602724f33557
+
+2019-03-27T00:13:43.089+0000 I STORAGE  [conn2] createCollection: admin.system.version with provided UUID: 72b4132a-90ab-4473-8f35-36d60c8e8ce3
+
+2019-03-27T00:13:43.125+0000 I COMMAND  [conn2] setting featureCompatibilityVersion to 4.0
+
+2019-03-27T00:13:43.125+0000 I NETWORK  [conn2] Skip closing connection for connection # 2
+
+2019-03-27T00:13:43.125+0000 I NETWORK  [conn2] Skip closing connection for connection # 1
+
+2019-03-27T00:13:43.126+0000 I REPL     [conn2] New replica set config in use: { _id: "singleNodeReplSet", version: 1, protocolVersion: 1, writeConcernMajorityJournalDefault: true, members: [ { _id: 0, host: "127.0.0.1:27030", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5c9ac036123ccba5c845b623') } }
+
+2019-03-27T00:13:43.126+0000 I REPL     [conn2] This node is 127.0.0.1:27030 in the config
+
+2019-03-27T00:13:43.126+0000 I REPL     [conn2] transition to STARTUP2 from STARTUP
+
+2019-03-27T00:13:43.126+0000 I REPL     [conn2] Starting replication storage threads
+
+2019-03-27T00:13:43.133+0000 I REPL     [conn2] transition to RECOVERING from STARTUP2
+
+2019-03-27T00:13:43.133+0000 I REPL     [conn2] Starting replication fetcher thread
+
+2019-03-27T00:13:43.134+0000 I REPL     [conn2] Starting replication applier thread
+
+2019-03-27T00:13:43.134+0000 I REPL     [conn2] Starting replication reporter thread
+
+2019-03-27T00:13:43.134+0000 I REPL     [rsSync-0] Starting oplog application
+
+2019-03-27T00:13:43.134+0000 I COMMAND  [conn2] command local.system.replset command: replSetInitiate { replSetInitiate: { _id: "singleNodeReplSet", members: [ { _id: 0, host: "127.0.0.1:27030" } ] }, $db: "admin", lsid: { id: UUID("0967ab93-6c97-46d8-8440-1438c71fba76") } } numYields:0 reslen:163 locks:{ Global: { acquireCount: { r: 13, w: 6, W: 2 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 34 } }, Database: { acquireCount: { r: 2, w: 3, W: 3 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 70 } }, Collection: { acquireCount: { r: 1, w: 2 } }, oplog: { acquireCount: { r: 1, w: 3 } } } protocol:op_msg 260ms
+
+2019-03-27T00:13:43.135+0000 I REPL     [rsSync-0] transition to SECONDARY from RECOVERING
+
+2019-03-27T00:13:43.135+0000 I REPL     [rsSync-0] conducting a dry run election to see if we could be elected. current term: 0
+
+2019-03-27T00:13:43.135+0000 I REPL     [replexec-0] dry election run succeeded, running for election in term 1
+
+2019-03-27T00:13:43.136+0000 I STORAGE  [replexec-0] createCollection: local.replset.election with generated UUID: a342ab55-37e0-4967-be69-a31514752d0b
+
+2019-03-27T00:13:43.179+0000 I REPL     [replexec-0] election succeeded, assuming primary role in term 1
+
+2019-03-27T00:13:43.179+0000 I REPL     [replexec-0] transition to PRIMARY from SECONDARY
+
+2019-03-27T00:13:43.179+0000 I REPL     [replexec-0] Resetting sync source to empty, which was :27017
+
+2019-03-27T00:13:43.179+0000 I REPL     [replexec-0] Entering primary catch-up mode.
+
+2019-03-27T00:13:43.179+0000 I REPL     [replexec-0] Exited primary catch-up mode.
+
+2019-03-27T00:13:43.179+0000 I REPL     [replexec-0] Stopping replication producer
+
+2019-03-27T00:13:45.136+0000 I STORAGE  [rsSync-0] createCollection: config.transactions with generated UUID: 41bc8972-d6af-422b-babe-61011843ae47
+
+2019-03-27T00:13:45.169+0000 I REPL     [rsSync-0] transition to primary complete; database writes are now permitted
+
+2019-03-27T00:13:45.170+0000 I STORAGE  [monitoring keys for HMAC] createCollection: admin.system.keys with generated UUID: 7874fa18-2b57-4c36-bb15-010fc7a8058b
+
+2019-03-27T00:13:45.173+0000 I STORAGE  [WTJournalFlusher] Triggering the first stable checkpoint. Initial Data: Timestamp(1553645622, 1) PrevStable: Timestamp(0, 0) CurrStable: Timestamp(1553645625, 2)
+
+2019-03-27T00:13:48.276+0000 I STORAGE  [conn2] createCollection: testdb.3073fb96-5da9-432b-b095-2d9374355698 with generated UUID: bb16366b-221b-49ed-b114-e860bf565667
+
+Finished setting up iteration
+
+
+{ "$addFields" : { "e" : { "$filter" : { "input" : "$e", "cond" : { "$eq" : ["$$this.da", null] } } } } }
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> MongoDB.Driver.MongoConnectionException: An exception occurred while sending a message to the server. ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.Core.Misc.StreamExtensionMethods.WriteBytesAsync(Stream stream, IByteBuffer buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.BinaryConnection.SendBufferAsync(IByteBuffer buffer, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.Core.Connections.BinaryConnection.SendBufferAsync(IByteBuffer buffer, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.BinaryConnection.SendMessagesAsync(IEnumerable`1 messages, MessageEncoderSettings messageEncoderSettings, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.WireProtocol.CommandUsingCommandMessageWireProtocol`1.ExecuteAsync(IConnection connection, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.Server.ServerChannel.ExecuteProtocolAsync[TResult](IWireProtocol`1 protocol, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.CommandOperationBase`1.ExecuteProtocolAsync(IChannelSource channelSource, ICoreSessionHandle session, ReadPreference readPreference, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(IReadBinding binding, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(IReadBinding binding, CancellationToken cancellationToken)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](IReadBinding binding, IReadOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.SingleAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at MongoFiltering.Comparison.GetDbFilter() in C:\Users\jeroen.vannevel\source\repos\MongoFiltering\MongoFiltering\Program.cs:line 105
+   at BenchmarkDotNet.Autogenerated.Runnable_0.<.ctor>b__3_3() in C:\Users\jeroen.vannevel\source\repos\MongoFiltering\MongoFiltering\bin\Release\netcoreapp2.1\316c2cb8-448a-4c79-896e-655fa3752300\316c2cb8-448a-4c79-896e-655fa3752300.notcs:line 238
+   at BenchmarkDotNet.Autogenerated.Runnable_0.WorkloadActionUnroll(Int64 invokeCount) in C:\Users\jeroen.vannevel\source\repos\MongoFiltering\MongoFiltering\bin\Release\netcoreapp2.1\316c2cb8-448a-4c79-896e-655fa3752300\316c2cb8-448a-4c79-896e-655fa3752300.notcs:line 501
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineFactory.Jit(Engine engine, Int32 jitIndex, Int32 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineFactory.CreateReadyToRun(EngineParameters engineParameters)
+   at BenchmarkDotNet.Autogenerated.Runnable_0.Run(IHost host, String benchmarkName) in C:\Users\jeroen.vannevel\source\repos\MongoFiltering\MongoFiltering\bin\Release\netcoreapp2.1\316c2cb8-448a-4c79-896e-655fa3752300\316c2cb8-448a-4c79-896e-655fa3752300.notcs:line 217
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in C:\Users\jeroen.vannevel\source\repos\MongoFiltering\MongoFiltering\bin\Release\netcoreapp2.1\316c2cb8-448a-4c79-896e-655fa3752300\316c2cb8-448a-4c79-896e-655fa3752300.notcs:line 101
+// AfterAll
+ExitCode != 0
+No more Benchmark runs will be launched as NO measurements were obtained from the previous run!
+
+
+// **************************
+// Benchmark: Comparison.GetServerFilter: Job-ZPEOQN(InvocationCount=1, UnrollFactor=1) [NumberOfOuters=1, NumberOfElements=1, PercentageOfDeletedElements=0]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "316c2cb8-448a-4c79-896e-655fa3752300.dll" --benchmarkName "MongoFiltering.Comparison.GetServerFilter(NumberOfOuters: 1, NumberOfElements: 1, PercentageOfDeletedElements: 0)" --job "InvocationCount=1, UnrollFactor=1" --benchmarkId 1 in C:\Users\jeroen.vannevel\source\repos\MongoFiltering\MongoFiltering\bin\Release\netcoreapp2.1\316c2cb8-448a-4c79-896e-655fa3752300\bin\Release\netcoreapp2.1
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.9 (CoreCLR 4.6.27414.06, CoreFX 4.6.27415.01), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-SGCQEV(InvocationCount=1, UnrollFactor=1)

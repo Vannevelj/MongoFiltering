@@ -1,0 +1,11 @@
+C:\Users\jeroen.vannevel\source\repos\MongoFiltering\MongoFiltering\bin\Release\netcoreapp2.1\MongoFiltering.deps.json
+C:\Users\jeroen.vannevel\source\repos\MongoFiltering\MongoFiltering\bin\Release\netcoreapp2.1\MongoFiltering.runtimeconfig.json
+C:\Users\jeroen.vannevel\source\repos\MongoFiltering\MongoFiltering\bin\Release\netcoreapp2.1\MongoFiltering.runtimeconfig.dev.json
+C:\Users\jeroen.vannevel\source\repos\MongoFiltering\MongoFiltering\bin\Release\netcoreapp2.1\MongoFiltering.dll
+C:\Users\jeroen.vannevel\source\repos\MongoFiltering\MongoFiltering\bin\Release\netcoreapp2.1\MongoFiltering.pdb
+C:\Users\jeroen.vannevel\source\repos\MongoFiltering\MongoFiltering\obj\Release\netcoreapp2.1\MongoFiltering.csproj.CoreCompileInputs.cache
+C:\Users\jeroen.vannevel\source\repos\MongoFiltering\MongoFiltering\obj\Release\netcoreapp2.1\MongoFiltering.AssemblyInfoInputs.cache
+C:\Users\jeroen.vannevel\source\repos\MongoFiltering\MongoFiltering\obj\Release\netcoreapp2.1\MongoFiltering.AssemblyInfo.cs
+C:\Users\jeroen.vannevel\source\repos\MongoFiltering\MongoFiltering\obj\Release\netcoreapp2.1\MongoFiltering.dll
+C:\Users\jeroen.vannevel\source\repos\MongoFiltering\MongoFiltering\obj\Release\netcoreapp2.1\MongoFiltering.pdb
+C:\Users\jeroen.vannevel\source\repos\MongoFiltering\MongoFiltering\obj\Release\netcoreapp2.1\MongoFiltering.csprojAssemblyReference.cache
